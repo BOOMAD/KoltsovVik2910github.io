@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+
+
+<html lang="ru">
+
+<head class="box-head">
+
+    <title>Home Work</title>
+    <link rel="shortcut icon" href="image.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+
+        .box-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-header {
+            flex-basis: 100%;
+            border: 1px solid;
+            order: 1;
+        }
+
+        .box-menu {
+            flex: 1;
+            border: 1px solid;
+            order: 2;
+        }
+
+        .box-ol {
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 100%;
+            border: 1px solid;
+            order: 3;
+        }
+
+        .box-navig {
+            flex-basis: 100%;
+            border: 1px solid;
+            order: 4;
+        }
+
+        .box-table {
+            border: 1px solid;
+            order: 6;
+        }
+
+        .box-form {
+            border: 1px solid;
+            order: 5;
+        }
+
+        .box-footer {
+            flex-basis: 100%;
+            align-items: flex-end;
+            border: 1px solid;
+            order: 7;
+        }
+
+        @media screen and (min-width: 800px) {
+            .box-body {
+                flex-direction: row;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body class="box-body">
+    <!-- Лого/ Название сайта -->
+    <div>
+        <header class="box-header" id="logo">
+            <img style="width: 100px; height: 100px;" src="header.jpg" alt="the image didn't load" />
+            <div>Fenix</div>
+        </header>
+    </div>
+
+    <!-- Меню -->
+    <div id="main-menu">
+        <ul class="box-menu">
+            <li class="main-menu-item"> <a href="http://www.Fenix-Menu.ru"> Главная  </a> </li>
+            <li class="main-menu-item"> <a href="http://www.Fenix-Static.ru"> Cтатистика </a> </li>
+            <li class="main-menu-item"> <a href="http://www.Fenix-Success"> Достижения </a> </li>
+        </ul>
+
+    </div>
+    <br>
+    <!-- Список гипер ссылок -->
+    <div>
+        <ol class="box-ol" id="type-list">
+            <li><a href="http://example.com" target="_blank"> Example</a></li>
+            <li><a href="https://example.com">Example</a></li>
+            <li><a href="ftp://example.com/file.docx">Без авторизации</a></li>
+            <li><a href="ftp://login:parol@example.com/file.docx">Авторизация</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Википедия">Википедия</a></li>
+            <li><a href="file:///Achilles.jpg">Фрагмент текущей страницы</a></li>
+            <li><a href="http://example.com + name + twoname + ">Параметр</a></li>
+            <li>
+                <ol>
+                    <li><a href="https://www.aeroflot.ru/ru-ru" title="Авиакомпания Аэрофлот"> Авиакомпания</a></li>
+                    <li><a href="https://www.aeroflot.ru/ru-ru/online_services" title="Сервисы и услуги"> Сервисы </a></li>
+                    <li><a href="https://www.aeroflot.ru/sb/ckin/app/ru-ru#/search_pnrs?_k=i3s2we" title="Онлайн регистрация"> Регистрация </a></li>
+                </ol>
+            </li>
+            <li><a title="...">Без href</a></li>
+            <li><а href=" ">href пустой</a></li>
+            <li><a href="https://example.com/" rel="nofollow">access denied</a></li>
+            <li><a href="https://example.com" rel="nofollow" content="noindex">No index</a></li>
+
+            <li>
+                <p> Ахилл принадлежал к роду Эакидов. Его дед по мужской линии Эак, сын Зевса и речной нимфы Эгины, был царём острова Эгина в Сароническом заливе. Эндеида, дочь либо мудрого кентавра Хирона, либо мегарского героя Скирона, родила Эаку двух сыновей — Теламона и Пелея; первый стал царём Саламина и отцом Большого Аякса, второй — царём одного из фессалийских племён и отцом Ахилла. Матерью Ахилла была Фетида, одна из пятидесяти дочерей морского бога Нерея. Зевс хотел сделать её своей возлюбленной, но ему было предсказано (по одной из версий, Прометеем), что сын, который родится от этого союза, станет сильнее отца и свергнет его. Поэтому Зевс отказался от Фетиды, и позже она стала возлюбленной Пелея. На горе Пелион была сыграна свадьба, на которую пришли даже боги. Невеста получила в подарок крылья Арки от Зевса, а жених — меч от Гефеста, коней Балия и Ксанфа от Посейдона, хламиду от Геры, свирель от Афины, фиалу с изображением Эрота от Афродиты, копьё с ясеневым древком от Хирона. Богиню раздоров Эриду на свадьбу не пригласили, и она, обидевшись, подбросила участникам празднества золотое яблоко из сада Гесперид с надписью «Прекраснейшей», что впоследствии привело к <a href="https://ru.wikipedia.org/wiki/Троянская_война"> Троянской войне</a>. </p>
+            </li>
+
+
+            <li> <img style="position: relative; width:180px;height:200px; left: 45%;" src="Achilles.jpg" </li>
+
+            <li>
+                <img src="Achilles.jpg" width="210" height="210" alt="Achilles" usemap="#Navigation">
+
+
+                <map name="Navigation">
+                    <area shape="rect" coords="100,100,200,200" href="#1-rect" alt="Прямоугольник">
+                    <area shape="circle" coords="150,150,50" href="#2-circle" alt="Круг">
+                </map>
+            </li>
+
+
+            <li><a href="index.html">Относительная</a></li>
+            <li><a href="about/1">Страница в каталоге about</a></li>
+            <li><a href="../about">Страница в каталоге уровнем выше</a></li>
+            <li><a href="../../about">Cтраница двумя уровнями выше</a></li>
+            <li><a href="/"><Сокращенная на главную</a></li>
+            <li><a href="/index2/2">Сокращенная на внутреннюю</a></li>
+        </ol>
+    </div>
+    <!-- Навигация по сайту -->
+    <nav id="list">
+        <div class="box-navig">
+            <ul>
+                <li><a href="#logo">Шапка</a></li>
+                <li><a href="#main-menu">Меню</a></li>
+                <li><a href="#footer">Подвал</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <table class="box-table" id="tab" border="1" cellpadding="4" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Марка автомобиля</th>
+                        <th>Год выпуска</th>
+                        <th>Пробег</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>2012</td>
+                        <td>93000</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>2017</td>
+                        <td>36600</td>
+                    </tr>
+                    <tr>
+                        <td>Volkswagen</td>
+                        <td>2020</td>
+                        <td>45050</td>
+                    </tr>
+                    <tr>
+                        <td>Audi</td>
+                        <td>2004</td>
+                        <td>172350</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </nav>
+
+
+    <!-- Форма -->
+    <div>
+        <h1>Форма контракта</h1>
+
+        <form class="box-form"
+              action="/"
+              method="POST">
+
+            <label>
+                Имя:<br />
+                <input name="field-name-1"
+                       value="Виктор" />
+            </label><br />
+
+            <label>
+                email:<br />
+                <input name="field-email"
+                       value="boom4d@yandex.ru"
+                       type="email" />
+            </label><br />
+
+            <label>
+                Дата рождения:<br />
+                <input name="field-date"
+                       value="1996-10-29"
+                       type="date" />
+            </label>
+
+            Пол:
+            <label>
+                <input type="radio" checked="checked"
+                       name="radio-group-1" value="Значение1" />
+                Муж
+            </label>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение2" />
+                Жен
+            </label>
+
+            Количество конечностей:
+            <label>
+                <input type="radio" checked="checked"
+                       name="radio-group-1" value="Значение1" />
+                1
+            </label>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение2" />
+                2
+            </label>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение2" />
+                3
+            </label>
+            <label>
+                <input type="radio"
+                       name="radio-group-1" value="Значение2" />
+                4
+            </label>
+
+            <label>
+                Сверхспособности (listbox с множественным выбором):
+
+                <select name="field-name-4[]"
+                        multiple="multiple">
+                    <option value="Значение1">Бессмертие</option>
+                    <option value="Значение2" selected="selected">Левитация</option>
+                    <option value="Значение3" selected="selected">Суперскорость</option>
+                </select>
+            </label>
+
+            <label>
+                Биография:
+                <textarea name="field-name-2">О себе</textarea>
+            </label>
+
+            Чекбокс:
+            <label>
+                <input type="checkbox" checked="checked"
+                       name="check-1" />
+                Подписаться на рассылку
+            </label>
+
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+
+
+
+    <!-- Подвал -->
+    <div>
+        <footer class="box-footer" id="footer"><a>(c) Кольцов Виктор 2021</a></footer>
+    </div>
+
+</body>
+
+
+</html>
