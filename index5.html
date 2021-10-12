@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style5.css" />
+</head>
+<body id="fon">
+    <h5>Price</h5>
+    <input id="num1" />
+    <h5>How much?</h5>
+    <input id="num2" />
+    <br>
+    <button onclick="Function()">Calculate</button>
+    <h5 id="result">the result is here </h5>
+    
+
+    <script>
+        function Function() {
+            var result;
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            result = num1 * num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

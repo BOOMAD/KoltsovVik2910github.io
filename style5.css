@@ -1,0 +1,16 @@
+body h5{
+    background-color: black;
+    max-width:175px;
+    color:gold;
+}
+#num1,#num2 {
+    background-color:#808080;
+    color: gold;
+}
+button{
+    background-color:black;
+    color:gold;
+}
+#fon {
+    background-image: url(fon.jpg);
+}
