@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style5.css" />
+    <script src="jquery6.js"></script>
+</head>
+<body id="fon">
+    <h5>Price</h5>
+    <input id="num1" />
+    <h5>How much?</h5>
+    <input id="num2" />
+    <br>
+    <button onclick="Function()">Calculate</button>
+    <h5 id="result">the result is here </h5>
+
+    <br />
+
+    <div id="calc" class="calc mt-2 order-4">
+        <p> Calculator price</p>
+        <div id="Stoimost">!!!!!</div>
+        <form>
+            <h5>How much?</h5>
+            <input id="num3" name="pole" />
+            <h5>Type product</h5>
+            <select name="Type">
+
+                Выбор типа товара
+
+                <option value="1">Бронза</option>
+
+                <option value="2">Серебро</option>
+
+                <option value="3">Золото</option>
+
+            </select>
+            <br />
+            <h5>Option product</h5>
+            <div id="opt" class="opt">
+                <label>
+                    <input id="r1" type="radio"
+                           name="Options" value="r1" /> Слиток
+                </label>
+                <label>
+                    <input id="r2" type="radio"
+                           name="Options" value="r2" /> Диск
+                </label>
+                <label>
+                    <input id="r3" type="radio"
+                           name="Options" value="r3" /> Медаль
+                </label>
+            </div>
+            <p>
+                
+                <div class="checkbox" id="checkbox">
+                    <label> <input id="box" type="checkbox" name="check-1" />Упаковать? </label>
+                </div>
+            </p>
+        </form>
+    </div>
+
+    <script>
+        function Function() {
+            var result;
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            result = num1 * num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
